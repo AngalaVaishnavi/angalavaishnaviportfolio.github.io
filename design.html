@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<head>
+<title>My personal website</title>
+<link rel="stylesheet" href="css/styles_design.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Header section starts here-->
+<div class="header">
+  <nav>
+   <a href="index.html"><img src="images/girl_image.png"></a>
+   <div class="nav-links">
+   <ul><li><a href="index.html">Home</a></li>
+       <li><a href="aboutme.html">About me</a></li>
+       <li><a href="skills.html">My skills</a></li>
+       <li><a href="design.html">Designs</a></li>
+       <li><a href="contact.html">Contact</a></li>   
+   </ul>
+</div>
+</nav>
+</div>
+<div class="text-box">
+      <h1>My Designs</h1><br>
+      <button onclick="togglelogo()" id="logobutton" type="button"><span></span>Logo Design</button>
+      <button onclick="togglebusiness()" id="businessbutton" type="button"><span></span>Business Card Design</button>
+      <button onclick="togglepackage()" id="packagebutton" type="button"><span></span>Packaging Design</button>
+</div>
+
+<div class="container">
+    <div class="photo-gallery">
+    
+    <div id="logo1" class="pic">
+        <img src="images/logo/model_1.jpg">
+    </div>
+    <div  id="logo2"  class="pic">
+        <img src="images/logo/model_2.jpg">
+    </div>
+    <div  id="logo3" class="pic">
+        <img src="images/logo/model_3.jpg">
+    </div>
+    <div  id="logo4" class="pic">
+      <img src="images/logo/model_4.jpg">
+  </div>
+  <div  id="logo5" class="pic">
+    <img src="images/logo/model_5.jpg">
+  </div>
+  <div  id="logo6" class="pic">
+    <img src="images/logo/model_6.jpg">
+  </div>
+  <div  id="logo7" class="pic">
+    <img src="images/logo/model_7.png">
+  </div>
+  <div  id="logo8" class="pic">
+    <img src="images/logo/model_8.jpg">
+  </div>
+  <div  id="logo9" class="pic">
+    <img src="images/logo/model_9.jpg">
+  </div>
+  <div  id="logo10" class="pic">
+    <img src="images/logo/model_10.jpg">
+  </div>
+  <div  id="logo11" class="pic">
+    <img src="images/logo/model_11.jpg">
+  </div>
+  <div  id="logo12" class="pic">
+    <img src="images/logo/model_12.jpg">
+  </div>
+  <div  id="logo13" class="pic">
+    <img src="images/logo/model_13.png">
+  </div>
+  <div  id="logo14" class="pic">
+    <img src="images/logo/model_14.png">
+  </div>
+  <div  id="logo15" class="pic">
+    <img src="images/logo/model_15.png">
+  </div>
+  <div  id="logo16" class="pic">
+    <img src="images/logo/model_16.png">
+  </div>
+  <div  id="logo17" class="pic">
+    <img src="images/logo/model_17.png">
+  </div>
+  <div  id="logo18" class="pic">
+    <img src="images/logo/model_18.png">
+  </div>
+  <div  id="logo19" class="pic">
+    <img src="images/logo/model_19.png">
+  </div>
+  <div  id="logo20" class="pic">
+    <img src="images/logo/model_20.png">
+  </div>
+  <div id="business1" class="pic">
+        <img src="images/business/Card_back.png">
+    </div>
+    <div id="business2" class="pic">
+        <img src="images/business/Card_back_1.png">
+    </div>
+    <div id="business3" class="pic">
+        <img src="images/business/Card_back_2.png">
+    </div>
+  <div id="business5" class="pic">
+      <img src="images/business/Card_front_1.png">
+  </div>
+  <div id="business6" class="pic">
+    <img src="images/business/Card_front_2.png">
+  </div>
+  <div id="business7" class="pic">
+    <img src="images/business/verticalview.jpg">
+  </div>
+    <div id="package1" class="pic">
+        <img src="images/packaging/package1.png">
+    </div>
+    <div id="package2" class="pic">
+        <img src="images/packaging/package2.png">
+    </div>
+    <div id="package3" class="pic">
+        <img src="images/packaging/package3.png">
+    </div>
+
+</div>
+</div>
+
+<!--Footer section starts here-->
+
+</body>
+<script>
+     function togglelogo() {
+    // get the logo
+    var mylogo1 = document.getElementById('logo1');
+    var mylogo2= document.getElementById('logo2');
+    var mylogo3 = document.getElementById('logo3');
+    var mylogo4 = document.getElementById('logo4');
+    var mylogo5 = document.getElementById('logo5');
+    var mylogo6 = document.getElementById('logo6');
+    var mylogo7 = document.getElementById('logo7');
+    var mylogo8 = document.getElementById('logo8');
+    var mylogo9 = document.getElementById('logo9');
+    var mylogo10 = document.getElementById('logo10');
+    var mylogo11 = document.getElementById('logo11');
+    var mylogo12 = document.getElementById('logo12');
+    var mylogo13 = document.getElementById('logo13');
+    var mylogo14 = document.getElementById('logo14');
+    var mylogo15 = document.getElementById('logo15');
+    var mylogo16 = document.getElementById('logo16');
+    var mylogo17 = document.getElementById('logo17');
+    var mylogo18 = document.getElementById('logo18');
+    var mylogo19 = document.getElementById('logo19');
+    var mylogo20 = document.getElementById('logo20');
+    
+    // get the current value of the clock's display property
+    var displaySetting = mylogo1.style.display;
+
+    // also get the clock button, so we can change what it says
+    var clockButton = document.getElementById('logobutton');
+
+    // now toggle the clock and the button text, depending on current state
+    if (displaySetting == 'none') {
+      // clock is visible. hide it
+      mylogo1.style.display = 'block';
+      mylogo2.style.display = 'block';
+      mylogo3.style.display = 'block';
+      mylogo4.style.display = 'block';
+      mylogo5.style.display = 'block';
+      mylogo6.style.display = 'block';
+      mylogo7.style.display = 'block';
+      mylogo8.style.display = 'block';
+      mylogo9.style.display = 'block';
+      mylogo10.style.display = 'block';
+      mylogo11.style.display = 'block';
+      mylogo12.style.display = 'block';
+      mylogo13.style.display = 'block';
+      mylogo14.style.display = 'block';
+      mylogo15.style.display = 'block';
+      mylogo16.style.display = 'block';
+      mylogo17.style.display = 'block';
+      mylogo18.style.display = 'block';
+      mylogo19.style.display = 'block';
+      mylogo20.style.display = 'block';
+      mylogo21.style.display = 'block';
+      // change button text
+      //clockButton.innerHTML = 'Show clock';
+    }
+    else {
+      // clock is hidden. show it
+      mylogo1.style.display = 'none';
+      mylogo2.style.display = 'none';
+      mylogo3.style.display = 'none';
+      mylogo4.style.display = 'none';
+      mylogo5.style.display = 'none';
+      mylogo6.style.display = 'none';
+      mylogo7.style.display = 'none';
+      mylogo8.style.display = 'none';
+      mylogo9.style.display = 'none';
+      mylogo10.style.display = 'none';
+      mylogo11.style.display = 'none';
+      mylogo12.style.display = 'none';
+      mylogo13.style.display = 'none';
+      mylogo14.style.display = 'none';
+      mylogo15.style.display = 'none';
+      mylogo16.style.display = 'none';
+      mylogo17.style.display = 'none';
+      mylogo18.style.display = 'none';
+      mylogo19.style.display = 'none';
+      mylogo20.style.display = 'none';
+      
+      // change button text
+      //clockButton.innerHTML = 'Hide clock';
+    
+  }
+  }
+
+//Button onclick will display set of business cards
+
+function togglebusiness() {
+// get the logo
+var mybusiness1 = document.getElementById('business1');
+var mybusiness2= document.getElementById('business2');
+var mybusiness3 = document.getElementById('business3');
+
+var mybusiness5 = document.getElementById('business5');
+var mybusiness6 = document.getElementById('business6');
+var mybusiness7 = document.getElementById('business7');
+// get the current value of the clock's display property
+var displaySetting = mybusiness1.style.display;
+// also get the clock button, so we can change what it says
+var clockButton = document.getElementById('businessbutton');
+// now toggle the clock and the button text, depending on current state
+if (displaySetting == 'none') {
+  // clock is visible. hide it
+  mybusiness1.style.display = 'block';
+  mybusiness2.style.display = 'block';
+  mybusiness3.style.display = 'block';
+  
+  mybusiness5.style.display = 'block';
+  mybusiness6.style.display = 'block';
+  mybusiness7.style.display = 'block';
+  // change button text
+  //clockButton.innerHTML = 'Show clock';
+}
+else {
+  // clock is hidden. show it
+  mybusiness1.style.display = 'none';
+  mybusiness2.style.display = 'none';
+  mybusiness3.style.display = 'none';
+  
+  mybusiness5.style.display = 'none';
+  mybusiness6.style.display = 'none';
+  mybusiness7.style.display = 'none';
+  // change button text
+  //clockButton.innerHTML = 'Hide clock';
+}}
+
+//Button onclick will display set of packaging designs
+
+function togglepackage() {
+// get the logo
+var mypackaging1 = document.getElementById('package1');
+var mypackaging2= document.getElementById('package2');
+var mypackaging3 = document.getElementById('package3');
+// get the current value of the clock's display property
+var packageSetting = mypackaging1.style.display;
+// also get the clock button, so we can change what it says
+var clockButton = document.getElementById('packagebutton');
+// now toggle the clock and the button text, depending on current state
+if (packageSetting == 'none') {
+  // clock is visible. hide it
+  mypackaging1.style.display = 'block';
+  mypackaging2.style.display = 'block';
+  mypackaging3.style.display = 'block';
+  // change button text
+  //clockButton.innerHTML = 'Show clock';
+}
+else {
+  // clock is hidden. show it
+  mypackaging1.style.display = 'none';
+  mypackaging2.style.display = 'none';
+  mypackaging3.style.display = 'none';
+  // change button text
+  //clockButton.innerHTML = 'Hide clock';
+}}
+</script>
+</html>

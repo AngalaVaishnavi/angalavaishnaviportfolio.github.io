@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<head>
+<title>My personal website</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles_aboutme.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Header section starts here-->
+<div class="header">
+  <nav>
+   <a href="index.html"><img src="images/girl_image.png"></a>
+   <div class="nav-links">
+   <ul><li><a href="index.html">Home</a></li>
+       <li><a href="aboutme.html">About me</a></li>
+       <li><a href="skills.html">My skills</a></li>
+       <li><a href="design.html">Designs</a></li>
+       <li><a href="contact.html">Contact</a></li>   
+   </ul>
+</div>
+</nav>
+</div> 
+
+<div class="container">
+    
+        <div class="column1">
+            <div class="pic"><img src="images/Vaishnavi_pic.png">
+            </div>
+            <button onclick="toggleEducation()" id="qualificationButton" class="qualification" type="button"><span></span>Qualification</button>
+            <button onclick="toggleexperience()" id="workexpButton" class="workexp" type="button"><span></span>Work Experience</button>
+            <button onclick="toggleawards()" id="awardsButton" class="awards" type="button"><span></span>Awards & Honours</button>
+            <button onclick="toggleconference()" id="conferencesButton" class="conferences" type="button"><span></span>Conferences</button>
+            <button onclick="togglesubjects()" id="subjectsButton" class="subjects" type="button"><span></span>Subjects</button>
+        </div>
+        <div class="column2">
+         <div id="qualification" class="education">
+           <h1>Education</h1>
+           <p><b>M.Tech</b> specialized in <b>Power Electronics & Drives</b>, April 2012, School of Electrical & Electronics Engineering, SASTRA University, Thanjavur, India.</p>
+            <p><b>B.E</b> specialized in <b>Electrical and Electronics Engineering</b>, April 2007,
+             Department of Electrical and Electronics Engineering, National Engg College, Anna University, Chennai, India.
+           </p>
+         </div>
+         
+         <div id="experience" class="experience">
+             <h1>Work Experience</h1>
+             <h2>Projects involved</h2>
+             <h4>Nokia, Finland (May 2007 to November 2007)</h4>
+            <p>Company profile: Nokia is a finnish multinational communications and information technology corporation that is headquartered in Finland. Its principal products are mobile telephones and portable IT devices. It also offers Internet services including applications, games, music, media and messaging, and free-of-charge digital map information and navigation services.</p><br>
+            <h5>Roles and Responsibilities:</h5>
+            <ul>
+                <li>Involved in Content Migration Systems.</li>
+                <li>Involved in Site Management.</li>
+                <li>Migrated contents for more than 50 countries.</li>
+                <li>Migrated contents in Web pages and E-mail templates.</li>
+            </ul><br>
+            <h5>Awards</h5>
+            <p>Awarded as <b>“Rising Star”</b> by Sandeep Arora CEO of Accenture for automating the work.</p><br>
+            <hr>
+            <h4>Telstra, Melbourne (December 2007 to May 2010)</h4>
+            <p>Company profile: Telstra Corporation Limited is an Australian telecommunications and media company, building and operating telecommunications networks and marketing voice, mobile, internet access and pay television products and services.</p><br>
+            <h5>Roles and Responsibilities:</h5>
+            <ul>
+                <li>Worked in Corporate Billing Manager (a portal for small scale customer)</li>
+                <li>Worked in Corporate Billing Analytics (a portal for large scale customer)</li>
+                <li>Worked in Mobile applications</li>
+                <li>Worked in Wholesale applications</li>
+                <li>Worked in onsite (Melbourne) for few months for project development activities.</li>
+                <li>Provided effective Knowledge Transfer to onsite clients.</li>
+            </ul><br>
+            <p>Online Billing (OLB): The raw bill file retrieved from Flexcab, Mica and Kenan interfaces were preprocessed and displayed online on Views through eaDirect engine. The Flexcab provided bill files with landline services. Mica provided mobile phone bill files. Kenan provided both landline and mobile services within a single bill file. These bills were viewed online by customers and paid online.</p><br> 
+            <h5>Awards</h5>
+            <p>Awarded as <b>“People Developer”</b> by Sandeep Arora CEO of Accenture.</p><br>
+            <hr>
+            <h4>Excella Business Services Private Limited</h4>
+            <p>Excella Business Services Private Limited is a private firm which is classified as a Non-govt company and is registered in Chennai. They are involved in development / maintenance of client websites. They also support creation of multimedia presentations for clients.</p><br>
+            <h5>Projects Involved</h5>
+            <ul><li>Springboot Web application development</li>
+            <li>Online shopping services</li>
+            <li>E-library Booking Services</li>
+            <li>Sales Management System</li>
+            <li>Online E-book Service Project</li></ul><br>
+        </div>
+        <div id="getawards" class="getawards">
+            <h1>Awards & Honours</h1>
+            <p>My awards & honours are,</p>
+            <h2>I am...</h2><br>
+            <p><ul>
+                <li>Awarded as the <b>“People Developer”</b> by CEO (Sandeep Arora) in Accenture.</li>
+                <li>Awarded as the <b>“Rising Star”</b> in Accenture.</li>
+                <li>Certified as “Sun Certified Java Programmer” by Sun Microsystems.</li>
+                <li>Cleared <b>“Green Field Training”</b> in Accenture.</li>
+                <li>Certified as an <b>“Internal Auditor”</b> in Quality Management Systems.</li>
+            </ul></p>
+        </div>
+        <div id="goconferences" class="goconferences">
+            <h1>Conferences</h1>
+            <ul><li>“Power Quality Enhancement using super capacitors for hybrid power generation” in 5th International Conference On Science and Innovative Engineering, Jawahar Engineering College.</li>
+            <li>"Study and Handling of Ground Control Operations in Aircraft landing system" in the Second International Conference on Emerging Trends in Engineering Research (ICETER 16), Oct 20-21, 2016, Vels University, Chennai</li>
+            <li>Participated and presented a poster entitled “Optimization of Economic Load Dispatch using Modified PSO techniques on Thermal Systems” held at Indian Institute of Technology Madras, Chennai, during 24th to 25th February 2018.</li>
+            <li>Attended Faculty Development Training Programme on “Power System Design & Analysis using DigSILENT Power Factory Software” by DellSoft Technologies Private Limited from 23.05.2016 to 25.05.2016</li>
+        </ul>
+        </div>
+        <div id="gosubjects" class="gosubjects">
+          <h1>Subjects handled</h1>
+          <ul><li>Power Electronics & Drives</li>
+            <li>Measurement & Instrumentation</li>
+            <li>Instrumentation & Control</li>
+            <li>Electrical Machines (DC & AC)</li>
+            <li>Circuit Analysis</li>
+            <li>Network Theorems</li>
+            <li>Transmission & Distribution</li>
+        </ul>
+        </div>
+        </div>
+ 
+</div>
+
+<!--Footer section starts here-->
+
+
+<script type="text/javascript">
+  document.getElementById("myButton").onclick = function () {
+      location.href = "design.html";
+  };
+
+  //Button onclick will display Qualification
+
+function toggleEducation() {
+
+var myqualification = document.getElementById('qualification');
+var qualificationSetting = myqualification.style.display;
+if (qualificationSetting == 'none') {
+    myqualification.style.display = 'block';
+}
+else {
+  myqualification.style.display = 'none';
+}}
+
+  //Button onclick will display experience
+
+  function toggleexperience() {
+
+var myqualification = document.getElementById('experience');
+var qualificationSetting = myqualification.style.display;
+if (qualificationSetting == 'none') {
+    myqualification.style.display = 'block';
+}
+else {
+  myqualification.style.display = 'none';
+}}
+
+  //Button onclick will display awards
+
+  function toggleawards() {
+
+var myawards = document.getElementById('getawards');
+var awardsSetting = myawards.style.display;
+if (awardsSetting == 'none') {
+    myawards.style.display = 'block';
+}
+else {
+    myawards.style.display = 'none';
+}}
+
+  //Button onclick will display conference
+
+  function toggleconference() {
+
+var myawards = document.getElementById('goconferences');
+var awardsSetting = myawards.style.display;
+if (awardsSetting == 'none') {
+    myawards.style.display = 'block';
+}
+else {
+    myawards.style.display = 'none';
+}}
+
+ //Button onclick will display subjects handled
+
+ function togglesubjects() {
+
+var subjects = document.getElementById('gosubjects');
+var subjectsSetting = subjects.style.display;
+if (subjectsSetting == 'none') {
+  subjects.style.display = 'block';
+}
+else {
+  subjects.style.display = 'none';
+}}
+
+</script>
+
+
+</body>
+</html>

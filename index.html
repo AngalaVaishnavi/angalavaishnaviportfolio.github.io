@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+<title>My personal website</title>
+<link rel="stylesheet" href="css/styles_index.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Header section starts here-->
+<div class="header">
+  <nav>
+   <a href="index.html"><img src="images/girl_image.png"></a>
+   <div class="nav-links">
+   <ul><li><a href="index.html">Home</a></li>
+       <li><a href="aboutme.html">About me</a></li>
+       <li><a href="skills.html">My skills</a></li>
+       <li><a href="design.html">Designs</a></li>
+       <li><a href="contact.html">Contact</a></li>   
+   </ul>
+</div>
+</nav>
+</div> 
+
+<div class="text-box">
+      <h1>I am a... </h1><h1 style="color:rgb(240, 50, 2)">Lecturer
+      <h2>I have Lectured for 10 years in Indian & Foreign colleges.
+      <h3>I love designing & developing images for logos, business cards and Packages.
+      <p>Checkout some of my designs....</p><br>
+      
+      
+      <button id="myButton" type="button"><span></span>Logo Design</button>
+      <button id="myButton" type="button"><span></span>Business Card Design</button>
+      <button id="myButton" type="button"><span></span>Packaging Design</button>
+</div>
+
+<!--Footer section starts here-->
+
+
+
+<script type="text/javascript">
+/*Script to redirect to Design.html page */
+  document.getElementById("myButton").onclick = function () {
+      location.href = "design.html";
+  };
+
+/*Script to display time*/
+setInterval(showTime, 1000);
+function showTime() {
+    let time = new Date();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+    am_pm = "AM";
+    if (hour > 12) {
+        hour -= 12;
+        am_pm = "PM";
+    }
+    if (hour == 0) {
+        hr = 12;
+        am_pm = "AM";
+    }
+    hour = hour < 10 ? "0" + hour : hour;
+    min = min < 10 ? "0" + min : min;
+    sec = sec < 10 ? "0" + sec : sec;
+    let currentTime = hour + ":" 
+        + min + ":" + sec + am_pm;
+    document.getElementById("clock")
+        .innerHTML = currentTime;
+}
+</script>
+
+
+</body>
+</html>
